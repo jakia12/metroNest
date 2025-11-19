@@ -37,7 +37,7 @@ export default function StatsCounterBanner() {
       {/* Background image */}
       <div className="relative h-[220px] w-full overflow-hidden md:h-[260px]">
         <Image
-          src="/images/counter-bg.jpg" // 👉 put your banner image here
+          src="/images/cntBg.jpg" // 👉 put your banner image here
           alt="Luxury property background"
           fill
           className="object-cover"

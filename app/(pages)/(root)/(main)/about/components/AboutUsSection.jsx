@@ -32,7 +32,7 @@ const AboutUsSection = () => {
           {/* Highlights list */}
           <div className="grid gap-4 pt-2 sm:grid-cols-2">
             <div className="flex items-start gap-3">
-              <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+              <span className="mt-1 inline-flex h-[50px] w-[115px] items-center justify-center rounded-xl bg-slate-900 text-white">
                 <Home className="h-4 w-4" />
               </span>
               <div>
@@ -47,7 +47,7 @@ const AboutUsSection = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+              <span className="mt-1 inline-flex h-[50px] w-[115px] items-center justify-center rounded-xl bg-slate-900 text-white">
                 <Users className="h-4 w-4" />
               </span>
               <div>
@@ -62,7 +62,7 @@ const AboutUsSection = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+              <span className="mt-1 inline-flex h-[50px] w-[115px] items-center justify-center rounded-xl bg-slate-900 text-white">
                 <MapPin className="h-4 w-4" />
               </span>
               <div>
@@ -77,7 +77,7 @@ const AboutUsSection = () => {
             </div>
 
             <div className="flex items-start gap-3">
-              <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+              <span className="mt-1 inline-flex h-[50px] w-[115px] items-center justify-center rounded-xl bg-slate-900 text-white">
                 <Handshake className="h-4 w-4" />
               </span>
               <div>
@@ -132,10 +132,10 @@ const AboutUsSection = () => {
             </div>
 
             {/* Floating secondary image */}
-            <div className="absolute -bottom-8 -left-6 hidden w-40 overflow-hidden rounded-3xl border border-white/60 bg-white shadow-lg shadow-slate-900/10 sm:block">
+            <div className="absolute -bottom-8 -left-6 hidden w-40 overflow-hidden rounded-3xl  shadow-lg shadow-slate-900/10 sm:block">
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/images/about-secondary.jpg"
+                  src="/images/house.png"
                   alt="Cozy living room interior"
                   fill
                   className="object-cover"
