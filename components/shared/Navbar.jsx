@@ -68,7 +68,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="leading-tight">
-            <p className="text-sm font-semibold tracking-wide">PILLER</p>
+            <p className="text-sm font-semibold tracking-wide">MetroNest</p>
             <p className="text-[11px] text-slate-300">Real Estate Solution</p>
           </div>
         </Link>

@@ -11,76 +11,67 @@ const GALLERY_ITEMS = [
   {
     id: 1,
     category: "Apartment",
-    src: "/images/gallery/g1.jpg",
+    src: "/images/pr.png",
     alt: "Modern luxury apartment exterior",
     lgColSpan: "lg:col-span-1",
-    aspect: "aspect-square",
   },
   {
     id: 2,
     category: "Apartment",
-    src: "/images/gallery/g2.jpg",
+    src: "/images/pr2.png",
     alt: "Luxury living room",
     lgColSpan: "lg:col-span-2",
-    aspect: "aspect-[16/9]",
   },
   {
     id: 3,
     category: "Commercial",
-    src: "/images/gallery/g3.jpg",
+    src: "/images/pr3.png",
     alt: "Mountain view villa",
     lgColSpan: "lg:col-span-1",
-    aspect: "aspect-square",
   },
   // ROW 2
   {
     id: 4,
     category: "Land Or Plot",
-    src: "/images/gallery/g4.jpg",
+    src: "/images/pr4.png",
     alt: "Large house with pool",
     lgColSpan: "lg:col-span-2",
-    aspect: "aspect-[16/9]",
   },
   {
     id: 5,
     category: "Apartment",
-    src: "/images/gallery/g5.jpg",
+    src: "/images/pr5.png",
     alt: "Three-story modern home",
     lgColSpan: "lg:col-span-1",
-    aspect: "aspect-square",
   },
   {
     id: 6,
     category: "Farm",
-    src: "/images/gallery/g6.jpg",
+    src: "/images/pr6.jpg",
     alt: "Villa with pool at dusk",
     lgColSpan: "lg:col-span-1",
-    aspect: "aspect-square",
   },
   // ROW 3 (optional – keep same pattern)
   {
     id: 7,
     category: "Apartment",
-    src: "/images/gallery/g7.jpg",
+    src: "/images/pr8.png",
     alt: "Concrete and glass villa",
     lgColSpan: "lg:col-span-1",
-    aspect: "aspect-square",
   },
   {
     id: 8,
     category: "Commercial",
-    src: "/images/gallery/g8.jpg",
+    src: "/images/sl1.png",
     alt: "Interior with tall windows",
     lgColSpan: "lg:col-span-2",
-    aspect: "aspect-[16/9]",
   },
   {
     id: 9,
     category: "Land Or Plot",
-    src: "/images/gallery/g9.jpg",
+    src: "/images/sl2.avif",
     alt: "Wide modern home",
     lgColSpan: "lg:col-span-1",
-    aspect: "aspect-square",
   },
 ];
 
@@ -104,7 +95,7 @@ export default function StunningGallerySection() {
           </div>
 
           <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">
-            Stunning Pillar Gallery
+            MetroNest Gallery
           </h2>
 
           {/* Filter buttons */}
@@ -133,17 +124,14 @@ export default function StunningGallerySection() {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className={`group relative overflow-hidden rounded-[32px] bg-gray-100 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl ${item.lgColSpan}`}
+              className={`group relative overflow-hidden rounded-[20px] bg-gray-100 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl ${item.lgColSpan}`}
             >
-              <div className={`relative w-full ${item.aspect}`}>
+              <div className={`relative w-full h-64 sm:h-80 lg:h-64 xl:h-80`}>
                 <Image
                   src={item.src}
                   alt={item.alt}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw,
-                         (max-width: 1024px) 50vw,
-                         25vw"
+                  className=" transition-transform duration-500 group-hover:scale-105 h-auto w-full"
                 />
               </div>
 

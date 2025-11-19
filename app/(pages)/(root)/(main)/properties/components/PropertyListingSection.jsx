@@ -12,6 +12,7 @@ import {
   Maximize2,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 const properties = [
@@ -261,7 +262,12 @@ export default function PropertyListingSection() {
                   {/* Title + address */}
                   <div className="mb-3">
                     <h3 className="mb-1 line-clamp-1 text-[18px] font-semibold text-slate-900">
-                      {property.title}
+                      <Link
+                        href={`/properties/${property.id}`}
+                        className="hover:text-[#f05454] transition-colors"
+                      >
+                        {property.title}
+                      </Link>
                     </h3>
                     <div className="flex items-center gap-1 text-xs font-medium text-slate-500">
                       <MapPin className="h-3 w-3 text-[#f05454]" />
