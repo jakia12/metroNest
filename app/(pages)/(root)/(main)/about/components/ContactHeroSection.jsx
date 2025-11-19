@@ -5,16 +5,16 @@ import Image from "next/image";
 
 const ContactHeroSection = () => {
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section className="w-full bg-[#F6F2F1] py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0">
         <div className="relative grid overflow-hidden rounded-[40px] bg-slate-900 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
           {/* LEFT: Image area */}
-          <div className="relative min-h-[260px] sm:min-h-[320px] lg:min-h-[420px] overflow-hidden">
+          <div className="relative  overflow-hidden w-full">
             <Image
-              src="/images/contact-hero.jpg"
+              src="/images/contHero.jpg"
               alt="Modern luxury house"
               fill
-              className="object-cover transition-transform duration-700 hover:scale-105"
+              className=" transition-transform duration-700 hover:scale-105"
               priority
             />
             {/* dark gradient for readability */}
@@ -28,7 +28,7 @@ const ContactHeroSection = () => {
             </div>
 
             {/* Circular mini map badge */}
-            <div className="absolute bottom-10 left-10 hidden h-28 w-28 items-center justify-center rounded-full bg-white/90 shadow-2xl shadow-black/40 sm:flex">
+            {/* <div className="absolute bottom-10 left-10 hidden h-28 w-28 items-center justify-center rounded-full bg-white/90 shadow-2xl shadow-black/40 sm:flex">
               <div className="relative h-24 w-24 overflow-hidden rounded-full border border-slate-200">
                 <Image
                   src="/images/contact-map.jpg"
@@ -42,7 +42,7 @@ const ContactHeroSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* RIGHT: Form card */}

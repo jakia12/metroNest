@@ -135,19 +135,13 @@ export default function Navbar() {
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 text-sm">
           <Link href="/" className="hover:text-slate-200">
-            <button className="flex items-center gap-1 hover:text-slate-200">
-              Home
-            </button>
+            Home
           </Link>
 
           <Link href="/about" className="hover:text-slate-200">
             About Us
           </Link>
-          <Link href="/properties">
-            <button className="flex items-center gap-1 hover:text-slate-200">
-              Properties
-            </button>
-          </Link>
+          <Link href="/properties">Properties</Link>
 
           <Link href="/contact" className="hover:text-slate-200">
             Contact Us
