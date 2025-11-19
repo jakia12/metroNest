@@ -413,7 +413,7 @@ export default function PropertyDetailsPage({ params }) {
               <div className="relative h-52 w-full overflow-hidden rounded-2xl bg-slate-100 sm:w-1/2">
                 {/* You can replace this with a real floor plan image */}
                 <Image
-                  src="/images/floor-plan.png"
+                  src="/images/floor/floor.jpg"
                   alt="Floor Plan"
                   fill
                   className="object-contain"
@@ -523,27 +523,72 @@ export default function PropertyDetailsPage({ params }) {
             <h3 className="mb-3 text-sm font-semibold text-slate-900">
               Contact Us
             </h3>
+
             <form className="space-y-3 text-xs">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
-              />
-              <input
-                type="text"
-                placeholder="Your Phone"
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
-              />
-              <textarea
-                rows={3}
-                placeholder="Your Message"
-                className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
-              />
+              {/* Name */}
+              <div className="space-y-1">
+                <label
+                  htmlFor="contact-name"
+                  className="text-[11px] font-medium text-slate-700 mb-[10px] block"
+                >
+                  Name
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  placeholder="Enter your name"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-[#444] placeholder:text-[#444] outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
+                />
+              </div>
+
+              {/* Email */}
+              <div className="space-y-1">
+                <label
+                  htmlFor="contact-email"
+                  className="text-[11px] font-medium text-slate-700 mb-[10px] block"
+                >
+                  Email
+                </label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-[#444] placeholder:text-[#444] outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
+                />
+              </div>
+
+              {/* Phone */}
+              <div className="space-y-1">
+                <label
+                  htmlFor="contact-phone"
+                  className="text-[11px] font-medium text-slate-700 mb-[10px] block"
+                >
+                  Phone
+                </label>
+                <input
+                  id="contact-phone"
+                  type="text"
+                  placeholder="Enter your phone number"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-[#444] placeholder:text-[#444] outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
+                />
+              </div>
+
+              {/* Message */}
+              <div className="space-y-1">
+                <label
+                  htmlFor="contact-message"
+                  className="text-[11px] font-medium text-slate-700 mb-[10px] block"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="contact-message"
+                  rows={3}
+                  placeholder="Write your message"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-[#444] placeholder:text-[#444] outline-none focus:border-[#f05454] focus:ring-1 focus:ring-[#f05454]/20"
+                />
+              </div>
+
               <button
                 type="submit"
                 className="flex w-full items-center justify-center gap-2 rounded-full bg-[#f05454] px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-[#e14343]"
@@ -556,7 +601,7 @@ export default function PropertyDetailsPage({ params }) {
 
           {/* CTA card */}
           <div className="relative overflow-hidden rounded-3xl bg-slate-900 text-white shadow-md">
-            <div className="relative h-40 w-full">
+            <div className="relative h-90 w-full">
               <Image
                 src="/images/pr4.png"
                 alt="We can help you"

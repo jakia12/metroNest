@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Search } from "lucide-react";
+import { Home, Mail, Phone, Search } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -13,15 +13,18 @@ export default function Navbar() {
       <div className="border-b border-white/10">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-2 text-xs sm:text-sm">
           <div className="flex flex-wrap items-center gap-4">
+            {/* Email */}
             <div className="flex items-center gap-2">
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-500/90 text-[10px]">
-                ✉️
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-red-500/90">
+                <Mail className="h-3 w-3 text-white" />
               </span>
               <span>infomailexample@mail.com</span>
             </div>
+
+            {/* Phone */}
             <div className="flex items-center gap-2">
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/90 text-[10px]">
-                📞
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/90">
+                <Phone className="h-3 w-3 text-white" />
               </span>
               <span>+00 (123) 456 789 00</span>
             </div>
@@ -78,22 +81,16 @@ export default function Navbar() {
           <button className="flex items-center gap-1 hover:text-slate-200">
             Home <span className="text-[10px]">▾</span>
           </button>
-          <Link href="#" className="hover:text-slate-200">
+          <Link href="/about" className="hover:text-slate-200">
             About Us
           </Link>
-          <button className="flex items-center gap-1 hover:text-slate-200">
-            Property <span className="text-[10px]">▾</span>
-          </button>
-          <button className="flex items-center gap-1 hover:text-slate-200">
-            Agencies <span className="text-[10px]">▾</span>
-          </button>
-          <button className="flex items-center gap-1 hover:text-slate-200">
-            Pages <span className="text-[10px]">▾</span>
-          </button>
-          <button className="flex items-center gap-1 hover:text-slate-200">
-            Blog <span className="text-[10px]">▾</span>
-          </button>
-          <Link href="#" className="hover:text-slate-200">
+          <Link href="/properties">
+            <button className="flex items-center gap-1 hover:text-slate-200">
+              Properties
+            </button>
+          </Link>
+
+          <Link href="/contact" className="hover:text-slate-200">
             Contact Us
           </Link>
         </nav>
