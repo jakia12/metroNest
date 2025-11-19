@@ -67,7 +67,7 @@ const CategoriesSection = () => {
           {categories.map((item) => (
             <button
               key={item.name}
-              className="group relative flex flex-col items-center rounded-3xl bg-white px-6 pb-6 pt-10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
+              className="mt-[19px] md:mt-0 lg:mt-0 group relative flex flex-col items-center rounded-3xl bg-white px-6 pb-6 pt-10 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
             >
               {/* Icon Circle */}
               <div className="relative -mt-17 mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-white ring-1 ring-slate-100 shadow-sm">
