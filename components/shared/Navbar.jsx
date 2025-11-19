@@ -78,9 +78,12 @@ export default function Navbar() {
 
         {/* Desktop nav links */}
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-          <button className="flex items-center gap-1 hover:text-slate-200">
-            Home <span className="text-[10px]">▾</span>
-          </button>
+          <Link href="/" className="hover:text-slate-200">
+            <button className="flex items-center gap-1 hover:text-slate-200">
+              Home
+            </button>
+          </Link>
+
           <Link href="/about" className="hover:text-slate-200">
             About Us
           </Link>
@@ -131,30 +134,27 @@ export default function Navbar() {
         } overflow-hidden border-t border-white/10 bg-[#0b2845]`}
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 text-sm">
-          <button className="flex items-center justify-between py-1">
-            <span>Home</span> <span className="text-[10px]">▾</span>
-          </button>
-          <Link href="#" className="py-1">
+          <Link href="/" className="hover:text-slate-200">
+            <button className="flex items-center gap-1 hover:text-slate-200">
+              Home
+            </button>
+          </Link>
+
+          <Link href="/about" className="hover:text-slate-200">
             About Us
           </Link>
-          <button className="flex items-center justify-between py-1">
-            <span>Property</span> <span className="text-[10px]">▾</span>
-          </button>
-          <button className="flex items-center justify-between py-1">
-            <span>Agencies</span> <span className="text-[10px]">▾</span>
-          </button>
-          <button className="flex items-center justify-between py-1">
-            <span>Pages</span> <span className="text-[10px]">▾</span>
-          </button>
-          <button className="flex items-center justify-between py-1">
-            <span>Blog</span> <span className="text-[10px]">▾</span>
-          </button>
-          <Link href="#" className="py-1">
+          <Link href="/properties">
+            <button className="flex items-center gap-1 hover:text-slate-200">
+              Properties
+            </button>
+          </Link>
+
+          <Link href="/contact" className="hover:text-slate-200">
             Contact Us
           </Link>
 
           {/* Add listing for mobile */}
-          <Link
+          {/* <Link
             href="#"
             className="mt-2 flex items-center justify-center gap-2 rounded-full border border-white/40 px-4 py-2 text-sm font-medium hover:bg-white hover:text-[#0b2845]"
           >
@@ -162,7 +162,7 @@ export default function Navbar() {
               🏠
             </span>
             Add Listing
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>
